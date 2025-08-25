@@ -1,5 +1,4 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Soongyu Choi's Website
 
 ![Academic Pages template example](images/homepage.png "Academic Pages template example")
 

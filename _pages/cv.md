@@ -11,54 +11,39 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Electrical and Electronic Engineering, Korea Advanced Institute of Science and Technology, 2026 (expected)
+* B.S. in Electrical and Electronic Engineering, Yonsei University, 2024
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2023.09~2024.02: Research Intern
+  * Hyperaccel
+  * Skills: NPU Simulator Design
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2023.01~2023.06: Research Assistant
+  * Yonsei University
+  * Skills: UPMEM PIM Kernel Programming
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Skills for NPU Architecting
+  * Programming Language: Python, C, C++, Go 
+  * Framework: Pytorch, Jax, CUDA, GPGPU-Sim, Docker
+  * Advanced RTL Programming: Using System Verilog 
+  * Xilinx FPGA
+
+* I can also do these things 
+  * 3D, Game developing: Unity C#
+  * Cross Platform Frontend: Flutter, ReactJS + Electron
+  * Backend: Nodejs, FastAPI, Database Management
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+Award
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* 2025 ICT Challenge
+
