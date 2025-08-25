@@ -22,7 +22,7 @@ repository               : "Gyu1291/gyu1291.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "my_photo.png"
+  avatar           : "my_photo.jpg"
   name             : "Soongyu Choi"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
