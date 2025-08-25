@@ -15,8 +15,8 @@
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "username": "Soongyu Choi",
+        "url": "https://scholar.google.com/citations?user=QtRezrIAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
@@ -25,37 +25,37 @@
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "Gyu1291",
+        "url": "https://github.com/Gyu1291"
       }
     ]
   },
   "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Korea Advanced Institute of Science and Technology",
+      "area": "Ph.D in Electrical and Electronic Engineering",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "startDate": "2026.02 (expected)",
+      "endDate": "2030.02 (expected)",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "Korea Advanced Institute of Science and Technology",
+      "area": "M.S. in Electrical and Electronic Engineering",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
+      "startDate": "2024.02",
+      "endDate": "2026.02 (expected)",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "Yonsei University",
+      "area": "B.S. in Electrical and Electronic Engineering",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "startDate": "2018.02",
+      "endDate": "2024.02 (Including 2 years of Military Service)",
       "gpa": null,
       "courses": []
     }
@@ -66,32 +66,25 @@
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "LightNobel: Improving Sequence Length Limitation in Protein Structure Prediction Model via Adaptive Activation Quantization",
+      "publisher": "ISCA 2025",
+      "releaseDate": "2025-06-30",
+      "website": "https://arxiv.org/pdf/2505.05893",
+      "summary": "Hardware/Software Co-designed Protein Structure Predictino Model Hardware Accelerator"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization",
+      "publisher": "ISCA 2025",
+      "releaseDate": "2025-06-30",
+      "website": "https://arxiv.org/abs/2503.18599",
+      "summary": "Hardware/Software Co-designed KV Cache Quantization Engine"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "LPU: A Latency-Optimized and Highly Scalable Processor for Large Language Model Inference",
+      "publisher": "IEEE Micro 2024 (Best Paper Award)",
+      "releaseDate": "2024-07-09",
+      "website": "https://ieeexplore.ieee.org/document/10591630",
+      "summary": "Hyperaccel's 1st generation LLM accelerator"
     }
   ],
   "presentations": [
