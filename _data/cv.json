@@ -1,15 +1,15 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Soongyu Choi",
+    "email": "soongyu1291@kaist.ac.kr",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://gyu1291.github.io/",
+    "summary": "Ph.D. student at KAIST",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Daejeon, Seoul",
+      "countryCode": "KR",
       "region": ""
     },
     "profiles": [
