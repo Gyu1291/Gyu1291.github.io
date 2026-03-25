@@ -140,8 +140,9 @@ function initHomeViewer() {
 
   function onLoad(object) {
     object.rotation.y = Math.PI / 7;
-    object.rotation.x = -0.18;
-    object.position.y = -0.25;
+    object.rotation.x = 0.98;
+    object.position.y = -0.18;
+    object.position.z = 0.22;
     applyFallbackMaterial(object);
     modelRoot.add(object);
     fitCameraToObject(object);
