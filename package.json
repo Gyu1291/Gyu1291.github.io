@@ -1,0 +1,16 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "This repository contains a GitHub Pages-ready static website built with plain HTML, CSS, and JavaScript.",
+  "main": "app.js",
+  "scripts": {
+    "build:viewer": "esbuild home-3d-entry.js --bundle --format=iife --platform=browser --outfile=home-3d.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.27.4",
+    "three": "^0.183.2"
+  }
+}

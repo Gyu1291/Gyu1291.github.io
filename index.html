@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soongyu Choi | Computer Architect</title>
+    <meta
+      name="description"
+      content="Interactive academic portfolio and blog for computer architecture research."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="site-shell home-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">SC</a>
+        <nav class="nav">
+          <a href="about.html">About Me</a>
+          <a href="publications.html">Publication</a>
+          <a href="projects.html">Projects</a>
+          <a href="posts.html">Post</a>
+        </nav>
+      </header>
+
+      <main class="hero-page">
+        <div class="hero-media">
+          <div class="hero-viewer glass-panel">
+            <div id="hero-3d-view" class="hero-3d-view" aria-label="Interactive 3D model viewer"></div>
+            <div class="viewer-overlay">
+              <p class="viewer-label">3D Research Artifact</p>
+              <p class="viewer-hint">Drag to rotate | Scroll to zoom</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-copy glass-panel">
+          <p class="eyebrow">Advanced Computing Systems</p>
+          <h1>Hi, I'm Soongyu Choi.</h1>
+          <p class="hero-role">Computer Architect</p>
+          <p class="hero-description">
+            Building beautiful systems research stories around AI accelerators,
+            memory systems, and next-generation computing platforms.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="publications.html">View Publications</a>
+            <a class="button button-secondary" href="posts.html">Read Posts</a>
+          </div>
+        </div>
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="home-3d.js"></script>
+  </body>
+</html>

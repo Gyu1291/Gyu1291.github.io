@@ -1,0 +1,22 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="32" fill="url(#bg)"/>
+  <rect x="118" y="114" width="564" height="292" rx="24" fill="#0B1230" stroke="#7AC9FF" stroke-opacity="0.35" stroke-width="3"/>
+  <rect x="182" y="178" width="436" height="164" rx="18" fill="url(#panel)"/>
+  <path d="M182 260H618" stroke="#99EDFF" stroke-opacity="0.55" stroke-width="3"/>
+  <path d="M400 178V342" stroke="#A88CFF" stroke-opacity="0.55" stroke-width="3"/>
+  <circle cx="400" cy="260" r="58" fill="url(#orb)"/>
+  <defs>
+    <linearGradient id="bg" x1="44" y1="48" x2="734" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091127"/>
+      <stop offset="1" stop-color="#120B28"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="182" y1="178" x2="618" y2="342" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#112768"/>
+      <stop offset="1" stop-color="#1D235E"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 260) rotate(90) scale(58)">
+      <stop stop-color="#EAF7FF"/>
+      <stop offset="1" stop-color="#5F8DFF"/>
+    </radialGradient>
+  </defs>
+</svg>

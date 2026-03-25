@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications | Soongyu Choi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="publications">
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">SC</a>
+        <nav class="nav">
+          <a href="about.html">About Me</a>
+          <a href="publications.html">Publication</a>
+          <a href="projects.html">Projects</a>
+          <a href="posts.html">Post</a>
+        </nav>
+      </header>
+
+      <main class="page-layout">
+        <section class="page-hero glass-panel">
+          <p class="eyebrow">Publication</p>
+          <h1>Conference and journal papers</h1>
+          <p>
+            Each item opens a modal detail page with abstract, venue, keywords,
+            and external links.
+          </p>
+        </section>
+
+        <section>
+          <div class="section-heading">
+            <h2>Conference Papers</h2>
+          </div>
+          <div id="conference-publications" class="card-list"></div>
+        </section>
+
+        <section>
+          <div class="section-heading">
+            <h2>Journal Papers</h2>
+          </div>
+          <div id="journal-publications" class="card-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <div id="detail-modal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-panel glass-panel" role="dialog" aria-modal="true">
+        <button class="modal-close" type="button" data-close-modal="true" aria-label="Close">
+          ×
+        </button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
