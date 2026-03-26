@@ -74,15 +74,42 @@
           <article class="glass-panel info-card">
             <h3>Connect</h3>
             <div class="link-buttons">
-              <a class="button button-secondary" href="https://github.com/Gyu1291" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="button button-secondary" href="https://www.linkedin.com/in/soongyu-choi/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="button button-secondary" href="soongyu1291@kaist.ac.kr" target="_blank" rel="noreferrer">Email</a>
+              <a
+                class="button button-secondary social-button"
+                href="https://github.com/Gyu1291"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+              >
+                <img src="icons/github_icon.png" alt="" />
+                <span>GitHub</span>
+              </a>
+              <a
+                class="button button-secondary social-button"
+                href="https://www.linkedin.com/in/soongyu-choi/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                <img src="icons/linkedin_icon.png" alt="" />
+                <span>LinkedIn</span>
+              </a>
+              <button
+                class="button button-secondary social-button"
+                type="button"
+                data-copy-email="soongyu1291@kaist.ac.kr"
+                aria-label="Copy email"
+              >
+                <img src="icons/email_icon.png" alt="" />
+                <span>Email</span>
+              </button>
             </div>
           </article>
         </section>
       </main>
     </div>
 
+    <div id="copy-toast" class="copy-toast" aria-live="polite" aria-hidden="true"></div>
     <script src="app.js"></script>
   </body>
 </html>

@@ -118,7 +118,10 @@ function openModal(item) {
           ${item.links
             .map(
               (link) =>
-                `<a class="button button-secondary" href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`
+                `<a class="button button-secondary social-button modal-link-button" href="${link.href}" target="_blank" rel="noreferrer">
+                  <img src="icons/paper_icon.png" alt="" />
+                  <span>${link.label}</span>
+                </a>`
             )
             .join("")}
         </div>
@@ -191,6 +194,70 @@ function bindModalEvents() {
     ) {
       event.preventDefault();
       openModal(getModalData(card.dataset.id, card.dataset.type));
+    }
+  });
+}
+
+let copyToastTimer;
+
+function showCopyToast(message) {
+  const toast = document.getElementById("copy-toast");
+  if (!toast) {
+    return;
+  }
+
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+  toast.setAttribute("aria-hidden", "false");
+
+  if (copyToastTimer) {
+    window.clearTimeout(copyToastTimer);
+  }
+
+  copyToastTimer = window.setTimeout(() => {
+    toast.classList.remove("is-visible");
+    toast.setAttribute("aria-hidden", "true");
+  }, 1800);
+}
+
+async function copyTextToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return true;
+  }
+
+  const helper = document.createElement("textarea");
+  helper.value = text;
+  helper.setAttribute("readonly", "");
+  helper.style.position = "absolute";
+  helper.style.left = "-9999px";
+  document.body.appendChild(helper);
+  helper.select();
+
+  try {
+    return document.execCommand("copy");
+  } finally {
+    document.body.removeChild(helper);
+  }
+}
+
+function bindCopyEmail() {
+  const trigger = document.querySelector("[data-copy-email]");
+  if (!trigger) {
+    return;
+  }
+
+  trigger.addEventListener("click", async () => {
+    const email = trigger.dataset.copyEmail;
+    if (!email) {
+      return;
+    }
+
+    try {
+      const copied = await copyTextToClipboard(email);
+      showCopyToast(copied ? "Copied email" : "Unable to copy email");
+    } catch (error) {
+      showCopyToast("Unable to copy email");
     }
   });
 }
@@ -326,4 +393,5 @@ renderPublications();
 renderProjects();
 renderPosts();
 bindModalEvents();
+bindCopyEmail();
 renderPostDetail();
