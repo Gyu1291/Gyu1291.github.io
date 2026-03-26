@@ -119,7 +119,7 @@ function openModal(item) {
             .map(
               (link) =>
                 `<a class="button button-secondary social-button modal-link-button" href="${link.href}" target="_blank" rel="noreferrer">
-                  <img src="icons/paper_icon.png" alt="" />
+                  <img src="./icons/paper_icon.png" alt="" width="18" height="18" />
                   <span>${link.label}</span>
                 </a>`
             )
