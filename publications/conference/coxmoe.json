@@ -1,0 +1,20 @@
+{
+  "id": "conf-3",
+  "cover": "assets/dac2026.png",
+  "title": "CoX-MoE: Coalesced Expert Execution for High-Throughput MoE Inference with AMX-Enabled CPU-GPU Co-Execution",
+  "authors": [
+    { "name": "Muyoung Son*" },
+    { "name": "Yi Chen*" },
+    { "name": "Seungjae Yoo" },
+    { "name": "Soongyu Choi", "highlight": true },
+    { "name": "Joo-Young Kim" }
+  ],
+  "authorsNote": "*Co-first author",
+  "summary": "CPU-GPU Co-processing for MoE inference.",
+  "venue": "DAC 2026",
+  "abstract": "Will be updated later.",
+  "tags": ["Intel AMX", "LLM Inference", "MoE"],
+  "links": [
+    { "label": "Paper", "href": "#"}
+  ]
+}

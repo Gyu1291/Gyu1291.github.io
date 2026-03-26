@@ -1,0 +1,18 @@
+{
+  "id": "conf-2",
+  "cover": "assets/ISCA2025.png",
+  "title": "LightNobel: Improving Sequence Length Limitation in Protein Structure Prediction Model via Adaptive Activation Quantization",
+  "authors": [
+    { "name": "Seunghee Han*" },
+    { "name": "Soongyu Choi*", "highlight": true },
+    { "name": "Joo-Young Kim" }
+  ],
+  "authorsNote": "*Co-first author",
+  "summary": "Activation-only quantization and dedicated accelerator for protein structure prediction model(e.g. AlphaFold).",
+  "venue": "ISCA 2025",
+  "abstract": "We present LightNobel, the first hardware-software co-designed accelerator developed to overcome scalability limitations on the sequence length in PPM. At the software level, we propose Token-wise Adaptive Activation Quantization (AAQ), which leverages unique token-wise characteristics, such as distogram patterns in PPM activations, to enable fine-grained quantization techniques without compromising accuracy. At the hardware level, LightNobel integrates the multi-precision reconfigurable matrix processing unit (RMPU) and versatile vector processing unit (VVPU) to enable the efficient execution of AAQ. Through these innovations, LightNobel achieves up to 8.44x, 8.41x speedup and 37.29x, 43.35x higher power efficiency over the latest NVIDIA A100 and H100 GPUs, respectively, while maintaining negligible accuracy loss. It also reduces the peak memory requirement up to 120.05x in PPM, enabling scalable processing for proteins with long sequences.",
+  "tags": ["Domain Specific Accelerator", "Alphafold", "Quantization"],
+  "links": [
+    { "label": "Paper", "href": "https://dl.acm.org/doi/10.1145/3695053.3731006"}
+  ]
+}

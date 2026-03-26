@@ -1,0 +1,31 @@
+{
+  "id": "jour-1",
+  "cover": "assets/IEEEMICRO.jpg",
+  "title": "A latency processing unit: A latency-optimized and highly scalable processor for large language model inference",
+  "authors": [
+    { "name": "Seungjae Moon" },
+    { "name": "Jung-Hoon Kim" },
+    { "name": "Junsoo Kim" },
+    { "name": "Seongmin Hong" },
+    { "name": "Junseo Cha" },
+    { "name": "Minsu Kim" },
+    { "name": "Sukbin Lim" },
+    { "name": "Gyubin Choi" },
+    { "name": "Dongjin Seo" },
+    { "name": "Jongho Kim" },
+    { "name": "Hunjong Lee" },
+    { "name": "Hyunjun Park" },
+    { "name": "Ryeowook Ko" },
+    { "name": "Soongyu Choi", "highlight": true },
+    { "name": "Jongse Park" },
+    { "name": "Jinwon Lee" },
+    { "name": "Joo-Young Kim" }
+  ],
+  "summary": "Memory bandwidth optimized NPU for LLM inference.",
+  "venue": "IEEE MICRO 2024",
+  "abstract": "The explosive arrival of OpenAI's ChatGPT has fueled the globalization of large language model (LLM), which consists of billions of pretrained parameters that embodies the aspects of syntax and semantics. HyperAccel introduces latency processing unit (LPU), a latency-optimized and highly scalable processor architecture for the acceleration of LLM inference. LPU perfectly balances the memory bandwidth and compute logic with streamlined dataflow to maximize performance and efficiency. LPU is equipped with expandable synchronization link (ESL) that hides data synchronization latency between multiple LPUs. HyperDex complements LPU as an intuitive software framework to run LLM applications. LPU achieves 1.25 ms/token and 20.9 ms/token for 1.3B and 66B model, respectively, which is 2.09x and 1.37x faster than the GPU. LPU, synthesized using Samsung 4nm process, has total area of 0.824 mm2 and power consumption of 284.31 mW. LPU-based servers achieve 1.33x and 1.32x energy efficiency over NVIDIA H100 and L4 servers, respectively.",
+  "tags": ["LLM", "Accelerator", "FPGA"],
+  "links": [
+    { "label": "Paper", "href": "https://arxiv.org/abs/2408.07326" }
+  ]
+}

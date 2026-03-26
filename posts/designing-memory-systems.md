@@ -1,3 +1,11 @@
+---
+id: post-1
+title: "Designing Memory Systems for the AI Era"
+date: 2026-03-25
+category: "Architecture Notes"
+description: "A sample markdown post showing how long-form technical writing will appear in the site."
+---
+
 # Designing Memory Systems for the AI Era
 
 Modern AI workloads are increasingly constrained by data movement rather than arithmetic throughput. That changes how we think about architecture research.

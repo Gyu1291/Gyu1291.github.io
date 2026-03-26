@@ -15,6 +15,11 @@ function setActiveNav() {
 }
 
 function createCard(item, type) {
+  const secondaryLine =
+    type === "publication"
+      ? `<p class="card-subtitle publication-authors">${renderAuthors(item.authors, item.authorsNote)}</p>`
+      : `<p class="card-subtitle">${item.subtitle}</p>`;
+
   return `
     <article class="content-card glass-panel" data-id="${item.id}" data-type="${type}" tabindex="0">
       <div class="content-card-image">
@@ -23,7 +28,7 @@ function createCard(item, type) {
       <div class="content-card-copy">
         <p class="card-meta">${item.venue}</p>
         <h3>${item.title}</h3>
-        <p class="card-subtitle">${item.subtitle}</p>
+        ${secondaryLine}
         <p>${item.summary}</p>
         <span class="button button-tertiary">Open Details</span>
       </div>
@@ -92,6 +97,10 @@ function openModal(item) {
     return;
   }
 
+  const secondaryLine = item.authors
+    ? `<p class="card-subtitle publication-authors">${renderAuthors(item.authors, item.authorsNote)}</p>`
+    : `<p class="card-subtitle">${item.subtitle}</p>`;
+
   content.innerHTML = `
     <div class="modal-layout">
       <div class="modal-image-wrap">
@@ -100,7 +109,7 @@ function openModal(item) {
       <div class="modal-copy">
         <p class="card-meta">${item.venue}</p>
         <h2>${item.title}</h2>
-        <p class="card-subtitle">${item.subtitle}</p>
+        ${secondaryLine}
         <p>${item.abstract}</p>
         <ul class="tag-list">
           ${item.tags.map((tag) => `<li>${tag}</li>`).join("")}
@@ -120,6 +129,22 @@ function openModal(item) {
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
+}
+
+function renderAuthors(authors = [], note = "") {
+  const names = authors
+    .map((author) => {
+      const person = typeof author === "string" ? { name: author } : author;
+      const className = person.highlight ? "publication-author publication-author-highlight" : "publication-author";
+      return `<span class="${className}">${escapeHtml(person.name || "")}</span>`;
+    })
+    .join(", ");
+
+  const listNote = note
+    ? `<span class="publication-author-note"> (${escapeHtml(note)})</span>`
+    : "";
+
+  return `${names}${listNote}`;
 }
 
 function closeModal() {

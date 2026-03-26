@@ -4,6 +4,7 @@
   "description": "This repository contains a GitHub Pages-ready static website built with plain HTML, CSS, and JavaScript.",
   "main": "app.js",
   "scripts": {
+    "build:content": "node scripts/build-content.js",
     "build:viewer": "esbuild home-3d-entry.js --bundle --format=iife --platform=browser --outfile=home-3d.js"
   },
   "keywords": [],
