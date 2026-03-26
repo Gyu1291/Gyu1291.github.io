@@ -1,6 +1,6 @@
 {
   "id": "jour-1",
-  "cover": "assets/IEEEMICRO.jpg",
+  "cover": "assets/IEEEMICRO.png",
   "title": "A latency processing unit: A latency-optimized and highly scalable processor for large language model inference",
   "authors": [
     { "name": "Seungjae Moon" },
