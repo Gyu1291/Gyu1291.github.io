@@ -57,7 +57,10 @@ function parseFrontMatter(markdown, filePath) {
       metadata[key] = rawValue.replace(/^"(.*)"$/, "$1");
     });
 
-  return metadata;
+  return {
+    metadata,
+    body: markdown.slice(match[0].length)
+  };
 }
 
 function loadPublicationCategory(category) {
@@ -79,14 +82,15 @@ function loadPosts() {
   return readDirFiles(dirPath, ".md")
     .map((filePath) => {
       const markdown = fs.readFileSync(filePath, "utf8");
-      const metadata = parseFrontMatter(markdown, filePath);
+      const { metadata, body } = parseFrontMatter(markdown, filePath);
       return {
         id: metadata.id,
         title: metadata.title,
         date: metadata.date,
         category: metadata.category,
         description: metadata.description,
-        path: normalizePath(filePath)
+        path: normalizePath(filePath),
+        content: body.trim()
       };
     })
     .sort((a, b) => String(b.date).localeCompare(String(a.date)));

@@ -123,7 +123,7 @@ window.siteData = {
     "journal": [
       {
         "id": "jour-1",
-        "cover": "assets/IEEEMICRO.jpg",
+        "cover": "assets/IEEEMicro.png",
         "title": "A latency processing unit: A latency-optimized and highly scalable processor for large language model inference",
         "authors": [
           {
@@ -204,7 +204,8 @@ window.siteData = {
       "date": "2026-03-25",
       "category": "Architecture Notes",
       "description": "A sample markdown post showing how long-form technical writing will appear in the site.",
-      "path": "posts/designing-memory-systems.md"
+      "path": "posts/designing-memory-systems.md",
+      "content": "# Designing Memory Systems for the AI Era\n\nModern AI workloads are increasingly constrained by data movement rather than arithmetic throughput. That changes how we think about architecture research.\n\n## Why memory matters more now\n\n- Model sizes continue to grow faster than on-chip storage budgets.\n- Sparse and dense workloads stress the memory hierarchy in very different ways.\n- Energy cost is often dominated by moving data across levels of the system.\n\nIn practice, this means a strong architecture proposal often begins with a memory question rather than a compute question.\n\n## A useful research framing\n\nWhen evaluating a new accelerator or system design, I like to separate the problem into three layers:\n\n- **Placement**: where tensors, weights, and activations live over time\n- **Movement**: how data travels between compute units and memory tiers\n- **Coordination**: which runtime or compiler decisions make the above practical\n\nThis framing makes it easier to connect microarchitectural ideas to full-system outcomes.\n\n## Example pseudo-code\n\n```text\nfor each layer in model:\n  fetch weights from preferred memory tier\n  schedule tiles based on reuse distance\n  overlap communication with compute\n```\n\n## Closing thought\n\nThe most exciting work in computer architecture often appears where hardware structure, software policy, and workload behavior meet. This blog can be a place to capture those ideas as they evolve."
     }
   ]
 };

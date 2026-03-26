@@ -301,19 +301,24 @@ async function renderPostDetail() {
   const postId = params.get("id");
   const post = window.siteData.posts.find((item) => item.id === postId) || window.siteData.posts[0];
 
+  if (!post) {
+    document.getElementById("post-header").innerHTML = "<h1>Post not found</h1>";
+    document.getElementById("post-content").innerHTML = "<p>Unable to load the selected post.</p>";
+    return;
+  }
+
   document.getElementById("post-header").innerHTML = `
     <p class="eyebrow">${post.category}</p>
     <h1>${post.title}</h1>
     <p class="muted">${post.date}</p>
   `;
 
-  try {
-    const response = await fetch(post.path);
-    const markdown = await response.text();
-    document.getElementById("post-content").innerHTML = renderMarkdown(markdown);
-  } catch (error) {
+  if (!post.content) {
     document.getElementById("post-content").innerHTML = "<p>Unable to load the markdown post.</p>";
+    return;
   }
+
+  document.getElementById("post-content").innerHTML = renderMarkdown(post.content);
 }
 
 setActiveNav();
