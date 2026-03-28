@@ -2,6 +2,40 @@ window.siteData = {
   "publications": {
     "conference": [
       {
+        "id": "conf-4",
+        "cover": "assets/ISCA2026.png",
+        "title": "Cassandra: Enabling Reasoning LLMs at Edge via Self-Speculative Decoding",
+        "authors": [
+          {
+            "name": "Soongyu Choi",
+            "highlight": true
+          },
+          {
+            "name": "Yuntae Kim"
+          },
+          {
+            "name": "Muyoung Son"
+          },
+          {
+            "name": "Joo-Young Kim"
+          }
+        ],
+        "summary": "Algorithm-Hardware Co-designed Self-Speculative Decoding for Edge LLM Deployment.",
+        "venue": "ISCA 2026",
+        "abstract": "Will be updated later.",
+        "tags": [
+          "Speculative Decoding",
+          "Edge LLM Inference",
+          "LLM Lossless Compression"
+        ],
+        "links": [
+          {
+            "label": "Paper",
+            "href": "#"
+          }
+        ]
+      },
+      {
         "id": "conf-3",
         "cover": "assets/dac2026.png",
         "title": "CoX-MoE: Coalesced Expert Execution for High-Throughput MoE Inference with AMX-Enabled CPU-GPU Co-Execution",
